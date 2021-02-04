@@ -97,7 +97,6 @@ public class RecipesFragment extends Fragment {
                             intent.putExtra(RecipeDetailActivity.RECIPE_KEY, recipesList.get(position));
                             startActivity(intent);
                         }));
-                        // FIXME: 7/5/2018 Come back
                         baseApplication.setIdleState(false);
                     }
                 }

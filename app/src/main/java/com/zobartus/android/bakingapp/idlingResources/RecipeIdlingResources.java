@@ -27,7 +27,7 @@ public class RecipeIdlingResources implements IdlingResource {
         this.callback = callback;
     }
 
-    public void setIsdleNow(boolean idleNow){
+    public void setIdleState(boolean idleNow){
         isdleNow.set(idleNow);
         if (idleNow && callback != null) {
             callback.onTransitionToIdle();
